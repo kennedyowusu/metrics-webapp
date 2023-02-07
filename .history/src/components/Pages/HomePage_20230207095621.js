@@ -65,7 +65,6 @@ const HomePage = () => {
       ) : (
         <AllCountries countries={countries.countries} />
       )} */}
-          {<AllCountries countries={countries.countries} />}
         </div>
       </div>
     </div>

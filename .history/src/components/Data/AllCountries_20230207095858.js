@@ -19,7 +19,7 @@ const AllCountries = ({ countries }) => {
             />
             <div className='flex flex-col items-center justify-center w-56 h-56 m-4 rounded-md shadow-md'>
               <h1 className='text-xl font-bold text-center'>{country.name}</h1>
-              <p className='text-sm text-center'>
+              {/* <p className='text-sm text-center'>
                 Population: {country.population}
               </p>
               <p className='text-sm text-center'>Region: {country.region}</p>
@@ -32,8 +32,9 @@ const AllCountries = ({ countries }) => {
               </p>
               <p className='text-sm text-center'>
                 Calling Code: {country.callingCodes[0]}
-              </p>
-              <p className='text-sm text-center'>
+              </p> */}
+              
+              {/* <p className='text-sm text-center'>
                 Timezone: {country.timezones[0]}
               </p>
               <p className='text-sm text-center'>
@@ -50,21 +51,21 @@ const AllCountries = ({ countries }) => {
               </p>
               <p className='text-sm text-center'>
                 Native Name: {country.nativeName}
-              </p>
+              </p> */}
               <p className='text-sm text-center'>
                 Subregion: {country.subregion}
               </p>
-              <p className='text-sm text-center'>Demonym: {country.demonym}</p>
+              {/* <p className='text-sm text-center'>Demonym: {country.demonym}</p>
               <p className='text-sm text-center'>Area: {country.area}</p>
               <p className='text-sm text-center'>Gini: {country.gini}</p>
               <p className='text-sm text-center'>Borders: {country.borders}</p>
               <p className='text-sm text-center'>
                 Native Language: {country.nativeLanguage}
-              </p>
-              <p className='text-sm text-center'>
+              </p> */}
+              {/* <p className='text-sm text-center'>
                 Regional Blocs: {country.regionalBlocs}
               </p>
-              <p className='text-sm text-center'>Cioc: {country.cioc}</p>
+              <p className='text-sm text-center'>Cioc: {country.cioc}</p> */}
             </div>
           </div>
         </div>
