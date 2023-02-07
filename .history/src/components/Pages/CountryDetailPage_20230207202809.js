@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import countries from '../../redux/countriesSlice'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 
 const CountryDetailPage = () => {

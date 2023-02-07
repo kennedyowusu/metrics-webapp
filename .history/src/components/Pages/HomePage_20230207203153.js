@@ -60,7 +60,7 @@ useEffect(() => {
       </div>
       <div className='flex flex-col items-center justify-center'>
         <Link
-          to={`/country/${countries.countries.name}`}
+          to={`/country/${countries.countries[0].name}`}
           // to=
           // {filteredCountries.length > 0 ? (
           //   `/country/${filteredCountries[0].name}`
