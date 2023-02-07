@@ -10,7 +10,7 @@ const CountryDetailPage = () => {
 
  const country = countries.find((country) => country.id === id)
 
- console.log(country);
+ console.log
 
  useEffect(() => {
   if (!country) {
