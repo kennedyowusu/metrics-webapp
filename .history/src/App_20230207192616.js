@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/country/:countryName" element={<CountryDetailPage />} />
-        <Route path="*" element={<NotFound />} />
+        
       </Routes>
     </div>
   );

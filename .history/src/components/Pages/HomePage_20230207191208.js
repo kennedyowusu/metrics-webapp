@@ -12,11 +12,22 @@ const HomePage = () => {
   const [filteredCountries, setFilteredCountries] = useState([])
 
 useEffect(() => {
-  if (countries.length !== 0) {
+  if (countries.length === 0) {
     dispatch(fetchCountriesAxios())
   }
   console.log(countries);
-}, [countries, dispatch])
+}, [])
+
+  // const BaseURl = 'https://restcountries.com/v3.1/all';
+
+  // useEffect(() => {
+  //   fetch(BaseURl)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       setFilteredCountries(data);
+  //     });
+  // }, []);
 
 
   const handleDataSearch = (e) => {
@@ -30,6 +41,8 @@ useEffect(() => {
     } else {
       setFilteredCountries(newFilter)
     }
+  
+   // console.log(`Search Value: ${searchValue}`)
   }
 
   return (

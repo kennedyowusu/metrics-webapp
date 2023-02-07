@@ -4,7 +4,7 @@ import { SelectCountryState } from '../../redux/countriesSlice'
 import { fetchCountriesAxios } from '../../redux/countriesSlice'
 import { Icon } from '@iconify/react'
 import AllCountries from '../Data/AllCountries'
-import { Link } from 'react-router-dom'
+import { }
 
 const HomePage = () => {
   const dispatch = useDispatch()
@@ -12,11 +12,20 @@ const HomePage = () => {
   const [filteredCountries, setFilteredCountries] = useState([])
 
 useEffect(() => {
-  if (countries.length !== 0) {
-    dispatch(fetchCountriesAxios())
-  }
+  dispatch(fetchCountriesAxios())
   console.log(countries);
 }, [countries, dispatch])
+
+  // const BaseURl = 'https://restcountries.com/v3.1/all';
+
+  // useEffect(() => {
+  //   fetch(BaseURl)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       setFilteredCountries(data);
+  //     });
+  // }, []);
 
 
   const handleDataSearch = (e) => {
@@ -30,6 +39,8 @@ useEffect(() => {
     } else {
       setFilteredCountries(newFilter)
     }
+  
+   // console.log(`Search Value: ${searchValue}`)
   }
 
   return (
@@ -59,16 +70,14 @@ useEffect(() => {
         </div>
       </div>
       <div className='flex flex-col items-center justify-center'>
-        <Link to='/country'>
-          <div className='flex flex-col items-center justify-center w-full h-full'>
-            {filteredCountries.length > 0 ? (
-              <AllCountries countries={filteredCountries} />
-            ) : (
-              <AllCountries countries={countries.countries} />
-            )}
-            {<AllCountries countries={countries.countries} />}
-          </div>
-        </Link>
+        <div className='flex flex-col items-center justify-center w-full h-full'>
+          {filteredCountries.length > 0 ? (
+          <AllCountries countries={filteredCountries} />
+      ) : (
+        <AllCountries countries={countries.countries} />
+      )}
+          {<AllCountries countries={countries.countries} />}
+        </div>
       </div>
     </div>
   )

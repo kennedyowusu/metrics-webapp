@@ -18,6 +18,17 @@ useEffect(() => {
   console.log(countries);
 }, [countries, dispatch])
 
+  // const BaseURl = 'https://restcountries.com/v3.1/all';
+
+  // useEffect(() => {
+  //   fetch(BaseURl)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       setFilteredCountries(data);
+  //     });
+  // }, []);
+
 
   const handleDataSearch = (e) => {
     e.preventDefault()

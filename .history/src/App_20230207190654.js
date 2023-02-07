@@ -1,9 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/Pages/HomePage';
-import CountryDetailPage from './components/Pages/CountryDetailPage';
-import NotFound from './components/Pages/NotFound';
-
+import  
 function App() {
   return (
     <div
@@ -11,8 +9,6 @@ function App() {
     >
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/country/:countryName" element={<CountryDetailPage />} />
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
