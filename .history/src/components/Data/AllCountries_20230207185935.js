@@ -36,7 +36,7 @@ const AllCountries = ({ countries }) => {
               <p className='text-sm text-center'>
                 Timezone: {country.timezones[0]}
               </p>
-              {/* <p className='text-sm text-center'>
+              <p className='text-sm text-center'>
                 Top Level Domain: {country.topLevelDomain[0]}
               </p>
               <p className='text-sm text-center'>
@@ -54,17 +54,17 @@ const AllCountries = ({ countries }) => {
               <p className='text-sm text-center'>
                 Subregion: {country.subregion}
               </p>
-              <p className='text-sm text-center'>Demonym: {country.demonym}</p> */}
+              <p className='text-sm text-center'>Demonym: {country.demonym}</p>
               <p className='text-sm text-center'>Area: {country.area}</p>
-              {/* <p className='text-sm text-center'>Gini: {country.gini}</p>
-              <p className='text-sm text-center'>Borders: {country.borders}</p> */}
-              {/* <p className='text-sm text-center'>
+              <p className='text-sm text-center'>Gini: {country.gini}</p>
+              <p className='text-sm text-center'>Borders: {country.borders}</p>
+              <p className='text-sm text-center'>
                 Native Language: {country.nativeLanguage}
-              </p> */}
-              {/* <p className='text-sm text-center'>
+              </p>
+              <p className='text-sm text-center'>
                 Regional Blocs: {country.regionalBlocs}
-              </p> */}
-              {/* <p className='text-sm text-center'>Cioc: {country.cioc}</p> */}
+              </p>
+              <p className='text-sm text-center'>Cioc: {country.cioc}</p>
             </div>
           </div>
         </div>

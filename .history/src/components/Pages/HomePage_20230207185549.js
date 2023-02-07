@@ -12,10 +12,10 @@ const HomePage = () => {
 
 useEffect(() => {
   dispatch(fetchCountriesAxios())
-  console.log(countries);
-}, [countries, dispatch])
+  
+}, [countries.length, dispatch])
 
-  // const BaseURl = 'https://restcountries.com/v3.1/all';
+  const BaseURl = 'https://restcountries.com/v3.1/all';
 
   // useEffect(() => {
   //   fetch(BaseURl)
@@ -70,11 +70,11 @@ useEffect(() => {
       </div>
       <div className='flex flex-col items-center justify-center'>
         <div className='flex flex-col items-center justify-center w-full h-full'>
-          {filteredCountries.length > 0 ? (
+          {/* {filteredCountries.length > 0 ? (
           <AllCountries countries={filteredCountries} />
       ) : (
         <AllCountries countries={countries.countries} />
-      )}
+      )} */}
           {<AllCountries countries={countries.countries} />}
         </div>
       </div>

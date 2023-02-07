@@ -6,13 +6,13 @@ export const fetchCountriesAxios = createAsyncThunk(
   'countries/fetchCountriesAxios',
   async () => {
     try {
-      const response = await getCountries('all')
+      // const response = await getCountries('all')
      // const response = axios.get('https://restcountries.com/v3.1/all')
     //  const response = axios.get('https://jsonplaceholder.typicode.com/users')
       // console.log(`
       //   Countries: ${response.data.length}
       // `)
-      console.log(response.data)
+     console.log(response.data)
       return response.data
     } catch (error) {
       console.log(error)

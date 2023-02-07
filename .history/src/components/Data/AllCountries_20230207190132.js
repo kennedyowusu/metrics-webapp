@@ -58,9 +58,9 @@ const AllCountries = ({ countries }) => {
               <p className='text-sm text-center'>Area: {country.area}</p>
               {/* <p className='text-sm text-center'>Gini: {country.gini}</p>
               <p className='text-sm text-center'>Borders: {country.borders}</p> */}
-              {/* <p className='text-sm text-center'>
+              <p className='text-sm text-center'>
                 Native Language: {country.nativeLanguage}
-              </p> */}
+              </p>
               {/* <p className='text-sm text-center'>
                 Regional Blocs: {country.regionalBlocs}
               </p> */}

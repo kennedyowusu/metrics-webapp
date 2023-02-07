@@ -70,11 +70,11 @@ useEffect(() => {
       </div>
       <div className='flex flex-col items-center justify-center'>
         <div className='flex flex-col items-center justify-center w-full h-full'>
-          {filteredCountries.length > 0 ? (
+          {/* {filteredCountries.length > 0 ? (
           <AllCountries countries={filteredCountries} />
       ) : (
         <AllCountries countries={countries.countries} />
-      )}
+      )} */}
           {<AllCountries countries={countries.countries} />}
         </div>
       </div>

@@ -10,12 +10,14 @@ const HomePage = () => {
   const countries = useSelector(SelectCountryState())
   const [filteredCountries, setFilteredCountries] = useState([])
 
-useEffect(() => {
-  dispatch(fetchCountriesAxios())
-  console.log(countries);
-}, [countries, dispatch])
+//  useEffect(() => {
+//   if (countries.length === 0) {
+//    dispatch(fetchCountriesAxios())
+//    console.log(`Countries: ${countries.length}`)
+//   }
+//  }, [countries.length, dispatch])
 
-  // const BaseURl = 'https://restcountries.com/v3.1/all';
+  const BaseURl = 'https://restcountries.com/v3.1/all';
 
   // useEffect(() => {
   //   fetch(BaseURl)
@@ -70,11 +72,11 @@ useEffect(() => {
       </div>
       <div className='flex flex-col items-center justify-center'>
         <div className='flex flex-col items-center justify-center w-full h-full'>
-          {filteredCountries.length > 0 ? (
+          {/* {filteredCountries.length > 0 ? (
           <AllCountries countries={filteredCountries} />
       ) : (
         <AllCountries countries={countries.countries} />
-      )}
+      )} */}
           {<AllCountries countries={countries.countries} />}
         </div>
       </div>
