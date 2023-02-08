@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from './Pages/HomePage';
-import DetailsPage from '../src/Pages/DetailsPage'
-import NotFound from './Pages/NotFound';
+import HomePage from './components/Pages/HomePage';
+import CountryDetailPage from './components/Pages/CountryDetailPage';
+import NotFound from './components/Pages/NotFound';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
     >
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path='/details/:alpha2Code' element={<DetailsPage />} />
+        <Route path="/country/:countryNa" element={<CountryDetailPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
