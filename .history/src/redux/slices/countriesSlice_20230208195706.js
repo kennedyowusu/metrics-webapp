@@ -20,6 +20,8 @@ const countriesSlice = createSlice({
   },
   extraReducers: {
     [fetchCountries.pending]: (state) => {
+      // state.loading = true;
+      // state.error = null;
       const updateState = {
         loading: true,
         error: null,
@@ -27,6 +29,9 @@ const countriesSlice = createSlice({
       return { ...state, ...updateState };
     },
     [fetchCountries.fulfilled]: (state, action) => {
+      // state.countries = action.payload;
+      // state.loading = false;
+      // state.error = null;
       const updateState = {
         countries: action.payload,
         loading: false,
@@ -35,12 +40,9 @@ const countriesSlice = createSlice({
       return { ...state, ...updateState };
     },
     [fetchCountries.rejected]: (state, action) => {
-      const updateState = {
-        countries: [],
-        loading: false,
-        error: action.error.message,
-      };
-      return { ...state, ...updateState };
+      state.countries = [];
+      state.loading = false;
+      state.error = action.error.message;
     },
   },
 });

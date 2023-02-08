@@ -7,7 +7,7 @@ const DetailsPage = () => {
   const { countries } = useSelector((state) => state.countries);
   const { alpha2Code } = useParams();
   const navigate = useNavigate();
-  const country = countries.find((c) => c.alpha2Code === alpha2Code);
+  const country = countries.find((c) => c.alpha2Code === alpha2Code); x;
 
   if (!country) {
     return <div className="text-center">Country not found</div>;
@@ -22,11 +22,15 @@ const DetailsPage = () => {
         >
           <button
             type="button"
-            className="text-xl py-4 hover:text-gray-500 text-start text-teal font-bold
+            className="text-xl py-4 hover:text-gray-500 text-start text-white font-bold
           rounded-lg
         "
             onClick={() => navigate(-1)}
           >
+            {/* <Icon
+              icon="ic:round-arrow-back-ios-new"
+              className="text-teal-500"
+            /> */}
             <FiChevronLeft />
           </button>
         </div>

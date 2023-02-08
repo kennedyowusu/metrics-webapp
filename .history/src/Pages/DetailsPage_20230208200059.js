@@ -22,7 +22,7 @@ const DetailsPage = () => {
         >
           <button
             type="button"
-            className="text-xl py-4 hover:text-gray-500 text-start text-teal font-bold
+            className="text-xl py-4 hover:text-gray-500 text-start text-white font-bold
           rounded-lg
         "
             onClick={() => navigate(-1)}

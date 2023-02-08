@@ -20,6 +20,8 @@ const countriesSlice = createSlice({
   },
   extraReducers: {
     [fetchCountries.pending]: (state) => {
+      // state.loading = true;
+      // state.error = null;
       const updateState = {
         loading: true,
         error: null,

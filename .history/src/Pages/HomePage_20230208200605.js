@@ -14,7 +14,7 @@ const HomePage = () => {
   let filteredCountries = countries;
   if (searchTerm) {
     filteredCountries = countries.filter(
-      (country) => country.name.toLowerCase().includes(searchTerm.toLowerCase()),
+      (country) => country.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
   }
 
