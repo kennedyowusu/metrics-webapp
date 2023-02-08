@@ -22,7 +22,7 @@ const HomePage = () => {
     <div className="flex flex-col items-center justify-start">
       <div className="flex items-center justify-center py-3">
         <GiGlobe className="
-        text-4xl text-teal-500 mr-10 animate-bounce animate-pulse animate-infinite
+        text-4xl text-teal-500 mr-2 animate-bounce animate-pulse animate-infinite
         "
         />
         <input
