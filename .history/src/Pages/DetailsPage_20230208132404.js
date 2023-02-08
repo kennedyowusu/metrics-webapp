@@ -13,15 +13,15 @@ const DetailsPage = () => {
   }
 
   return (
-    <div className='flex flex-col items-center justify-start'>
+    <div className='flex flex-col items-center'>
       <button
-        className='text-xl p-4 hover:text-gray-500 text-start'
+        className='text-xl p-4 hover:text-gray-500'
         onClick={() => navigate(-1)}
       >
         &larr;
       </button>
       <div className='mx-auto max-w-sm p-6 bg-white rounded-lg'>
-        <img src={country.flag} alt={country.name} className=" w-90 h-52 mx-auto
+        img src={country.flag} alt={country.name} className=" w-90 h-52 mx-auto
         border-4 border-gray-200 object-cover " />
         <h2 className='text-2xl font-medium'>{country.name}</h2>
         <p className='text-lg font-medium'>Capital: {country.capital}</p>

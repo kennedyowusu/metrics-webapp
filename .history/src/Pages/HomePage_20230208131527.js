@@ -20,13 +20,11 @@ const HomePage = () => {
   }
 
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
       {countries.map((country) => (
-        <div key={country.alpha2Code}
-          className='border rounded-lg'
-        >
+        <div key={country.alpha2Code}>
           <Link to={`/details/${country.alpha2Code}`}>
-            <img src={country.flag} alt={country.name}
+            {/* <img src={country.flag} alt={country.name} */}
             
               className='w-full h-52 mx-auto border-4 border-gray-200 object-cover'
             />

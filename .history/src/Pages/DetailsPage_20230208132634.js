@@ -13,9 +13,9 @@ const DetailsPage = () => {
   }
 
   return (
-    <div className='flex flex-col items-center justify-start'>
+    <div className='flex flex-col'>
       <button
-        className='text-xl p-4 hover:text-gray-500 text-start'
+        className='text-xl p-4 hover:text-gray-500'
         onClick={() => navigate(-1)}
       >
         &larr;
