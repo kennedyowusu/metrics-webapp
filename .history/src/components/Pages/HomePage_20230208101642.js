@@ -16,7 +16,7 @@ useEffect(() => {
     dispatch(fetchCountriesAxios())
   }
   console.log(countries);
-}, [countries, dispatch])
+}, [])
 
 
   const handleDataSearch = (e) => {

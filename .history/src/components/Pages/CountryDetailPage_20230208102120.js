@@ -30,10 +30,10 @@ const CountryDetailPage = () => {
       <div className='flex flex-col items-center justify-center w-full h-full'>
         <p>
           <span className='font-bold'>Name:</span> {country.name}
-      </p>
-      <p>
-        <span className='font-bold'>Capital:</span> {country.capital}
-      </p>
+     </p>
+     <p>
+      <span className='font-bold'>Capital:</span> {country.capital}
+     </p>
       </div>
     </div>
   )

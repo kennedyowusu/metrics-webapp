@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom'
 
 
 const CountryDetailPage = () => {
-  const navigate = useNavigate()
-  const { countryName } = useParams()
+ const navigate = useNavigate()
+ const { countryName } = useParams()
 
-  const country = countries.find((country) => country.countryName === countryName)
+ const country = countries.find((country) => country.countryName === countryName)
 
-  console.log(country);
+ console.log(country);
 
-  useEffect(() => {
-    if (!country) {
-    navigate('/404')
-    }
-  }, [country, navigate])
+ useEffect(() => {
+  if (!country) {
+   navigate('/404')
+  }
+ }, [country, navigate])
 
 
   return (
@@ -30,10 +30,10 @@ const CountryDetailPage = () => {
       <div className='flex flex-col items-center justify-center w-full h-full'>
         <p>
           <span className='font-bold'>Name:</span> {country.name}
-      </p>
-      <p>
-        <span className='font-bold'>Capital:</span> {country.capital}
-      </p>
+     </p>
+     <p>
+      <span className='font-bold'>Capital:</span> {country.capital}
+     </p>
       </div>
     </div>
   )

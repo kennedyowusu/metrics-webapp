@@ -35,7 +35,7 @@ const CountryDetailPage = () => {
         <span className='font-bold'>Capital:</span> {country.capital}
       </p>
       </div>
-    </div>
+    </div>  
   )
 }
 
