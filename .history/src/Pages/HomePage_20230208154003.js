@@ -11,7 +11,7 @@ const HomePage = () => {
     setSearchTerm(event.target.value);
   };
 
-  let filteredCountries = countries;
+  let filteredCountries = counpx stylelint "**/*.{css,scss}"ntries;
   if (searchTerm) {
     filteredCountries = countries.filter((country) => country.name.toLowerCase().includes(searchTerm.toLowerCase()));
   }

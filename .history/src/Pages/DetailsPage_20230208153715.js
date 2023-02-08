@@ -15,22 +15,21 @@ const DetailsPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-start">
+
       <div className="mx-auto max-w-sm p-10 rounded-lg ">
         <div
           className="flex items-start justify-start -mt-4 text-center
       "
         >
           <button
-            type="button"
+            type='
             className="text-xl py-4 hover:text-gray-500 text-start text-white font-bold
           rounded-lg
         "
             onClick={() => navigate(-1)}
           >
-            <Icon
-              icon="ic:round-arrow-back-ios-new"
-              className="text-teal-500"
-            />
+
+            <Icon icon="ic:round-arrow-back-ios-new" className="text-teal-500" />
           </button>
         </div>
 
