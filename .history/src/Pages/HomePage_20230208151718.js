@@ -1,7 +1,6 @@
 import {useState} from 'react'
 import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
-import { Icon } from '@iconify/react'
+import { useSelector, useDispatch } from 'react-redux'
 
 const HomePage = () => {
   const { countries } = useSelector((state) => state.countries)
@@ -20,16 +19,18 @@ const HomePage = () => {
 
   return (
     <div className='flex flex-col items-center justify-start'>
-      <div className='flex items-center justify-center py-3'>
-        <Icon icon='ph:globe-stand' className='text-teal-500 text-4xl mr-10' />
+      <div className='flex items-center justify-center mb-6'>
+        <img
+          src='https://via.placeholder.com/100x100'
+          alt='Logo'
+          className='w-16 h-16 mr-2 hidden md:inline'
+        />
         <input
           type='text'
           placeholder='Search'
           value={searchTerm}
           onChange={handleSearch}
-          className='w-full md:w-64 p-2 rounded-lg border
-        border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent
-          '
+          className='w-full md:w-64 p-2 rounded-lg'
         />
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1'>

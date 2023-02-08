@@ -21,15 +21,13 @@ const HomePage = () => {
   return (
     <div className='flex flex-col items-center justify-start'>
       <div className='flex items-center justify-center py-3'>
-        <Icon icon='ph:globe-stand' className='text-teal-500 text-4xl mr-10' />
+        <Icon icon='ph:globe-stand' className='text-teal-500 text-4xl px-4' />
         <input
           type='text'
           placeholder='Search'
           value={searchTerm}
           onChange={handleSearch}
-          className='w-full md:w-64 p-2 rounded-lg border
-        border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent
-          '
+          className='w-full md:w-64 p-2 rounded-lg'
         />
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1'>

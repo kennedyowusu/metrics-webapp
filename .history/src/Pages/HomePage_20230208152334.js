@@ -21,7 +21,7 @@ const HomePage = () => {
   return (
     <div className='flex flex-col items-center justify-start'>
       <div className='flex items-center justify-center py-3'>
-        <Icon icon='ph:globe-stand' className='text-teal-500 text-4xl mr-10' />
+        <Icon icon='ph:globe-stand' className='text-teal-500 text-4xl m-4' />
         <input
           type='text'
           placeholder='Search'
