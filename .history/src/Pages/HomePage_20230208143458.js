@@ -44,7 +44,7 @@ const HomePage = () => {
                 alt={country.name}
                 className='w-full h-52 mx-auto border-4 border-gray-200 object-cover'
               />
-              <p className=' bg-white rounded text-center text-lg'>
+              <p className=' bg-white hover:bg-white-300 rounded text-center text-lg'>
                 {country.name}
               </p>
             </Link>
