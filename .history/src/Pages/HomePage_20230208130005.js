@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { fetchCountries } from '../redux/slices/countriesSlice'
+import { fetchCountries } from '../'
 
 const HomePage = () => {
   const { countries, loading, error } = useSelector((state) => state.countries)
