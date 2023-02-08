@@ -34,7 +34,7 @@ const HomePage = () => {
         <div className="flex items-center justify-center py-3">
           <GiGlobe
             className="
-        text-4xl text-teal-500 ml-2 mr-4 animate-bounce animate-pulse animate-infinite
+        text-4xl text-teal-500 mr-6 animate-bounce animate-pulse animate-infinite
         "
           />
           <input
@@ -42,7 +42,7 @@ const HomePage = () => {
             placeholder="Search"
             value={searchTerm}
             onChange={handleSearch}
-            className="w-full md:w-64 p-2 mr-4 rounded-lg border
+            className="w-full md:w-64 p-2 rounded-lg border
         border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent
           "
           />

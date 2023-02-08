@@ -34,7 +34,7 @@ const HomePage = () => {
         <div className="flex items-center justify-center py-3">
           <GiGlobe
             className="
-        text-4xl text-teal-500 ml-2 mr-4 animate-bounce animate-pulse animate-infinite
+        text-4xl text-teal-500 mr-4 animate-bounce animate-pulse animate-infinite
         "
           />
           <input
