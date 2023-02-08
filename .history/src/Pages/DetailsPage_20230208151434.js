@@ -28,7 +28,7 @@ const DetailsPage = () => {
             onClick={() => navigate(-1)}
           >
             
-            <Icon icon='ic:round-arrow-back-ios-new' className='text-teal-500' />
+            <Icon icon='ic:round-arrow-back-ios-new' className='bg-teal-500' />
           </button>
         </div>
 
@@ -39,7 +39,7 @@ const DetailsPage = () => {
         border-4 border-gray-200 object-cover '
         />
         <div className='flex items-center justify-center mt-4 mb-2 text-center bg-teal-500 text-white'>
-          <h2 className='text-md font-medium p-1 uppercase'>{country.name}</h2>
+          <h2 className='text-md font-medium p-1'>{country.name}</h2>
         </div>
         <div className='flex items-center justify-center mt-4 mb-2 text-center bg-teal-500 text-white'>
           <p className='text-md font-medium p-1'>Capital: {country.capital}</p>
