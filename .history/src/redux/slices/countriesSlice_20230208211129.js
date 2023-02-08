@@ -40,6 +40,30 @@ const countriesSlice = createSlice({
       };
       return { ...state, ...updateState };
     });
+    // Alternative syntax:
+    // [fetchCountries.pending]: (state) => {
+    //   const updateState = {
+    //     loading: true,
+    //     error: null,
+    //   };
+    //   return { ...state, ...updateState };
+    // },
+    // [fetchCountries.fulfilled]: (state, action) => {
+    //   const updateState = {
+    //     countries: action.payload,
+    //     loading: false,
+    //     error: null,
+    //   };
+    //   return { ...state, ...updateState };
+    // },
+    // [fetchCountries.rejected]: (state, action) => {
+    //   const updateState = {
+    //     countries: [],
+    //     loading: false,
+    //     error: action.error.message,
+    //   };
+    //   return { ...state, ...updateState };
+    // },
   },
 });
 

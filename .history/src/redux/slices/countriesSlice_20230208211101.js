@@ -24,22 +24,30 @@ const countriesSlice = createSlice({
       };
       return { ...state, ...updateState };
     });
-    builder.addCase(fetchCountries.fulfilled, (state, action) => {
-      const updateState = {
-        countries: action.payload,
-        loading: false,
-        error: null,
-      };
-      return { ...state, ...updateState };
-    });
-    builder.addCase(fetchCountries.rejected, (state, action) => {
-      const updateState = {
-        countries: [],
-        loading: false,
-        error: action.error.message,
-      };
-      return { ...state, ...updateState };
-    });
+    
+    // [fetchCountries.pending]: (state) => {
+    //   const updateState = {
+    //     loading: true,
+    //     error: null,
+    //   };
+    //   return { ...state, ...updateState };
+    // },
+    // [fetchCountries.fulfilled]: (state, action) => {
+    //   const updateState = {
+    //     countries: action.payload,
+    //     loading: false,
+    //     error: null,
+    //   };
+    //   return { ...state, ...updateState };
+    // },
+    // [fetchCountries.rejected]: (state, action) => {
+    //   const updateState = {
+    //     countries: [],
+    //     loading: false,
+    //     error: action.error.message,
+    //   };
+    //   return { ...state, ...updateState };
+    // },
   },
 });
 
