@@ -1,17 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { GiGlobe } from 'react-icons/gi';
-import { fetchCountries } from '../redux/slices/countriesSlice';
 
 const HomePage = () => {
   const { countries } = useSelector((state) => state.countries);
   const [searchTerm, setSearchTerm] = useState('');
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchCountries());
-  }, [dispatch]);
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
@@ -19,18 +13,16 @@ const HomePage = () => {
 
   let filteredCountries = countries;
   if (searchTerm) {
-    filteredCountries = countries.filter(
-      (country) => country.name.toLowerCase().includes(searchTerm.toLowerCase()),
-    );
+    filteredCountries = countries.filter((country) => country.name.toLowerCase().includes(searchTerm.toLowerCase()));
   }
 
   return (
-    <div className="flex flex-col items-center justify-start p-4">
+    <div className="flex flex-col items-center justify-start">
       <div className="flex items-center justify-center py-3">
         <GiGlobe
           className="
-        text-4xl text-teal-500 mr-10 animate-bounce animate-pulse animate-infinite
-        "
+       text-4xl text-teal-500 mr-10 animate-bounce animate-pulse animate-infinite
+       "
         />
         <input
           type="text"
@@ -38,8 +30,8 @@ const HomePage = () => {
           value={searchTerm}
           onChange={handleSearch}
           className="w-full md:w-64 p-2 rounded-lg border
-        border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent
-          "
+       border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent
+         "
         />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">

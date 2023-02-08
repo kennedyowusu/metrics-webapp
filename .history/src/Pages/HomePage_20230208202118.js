@@ -25,7 +25,7 @@ const HomePage = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-start p-4">
+    <div className="flex flex-col items-center justify-start ">
       <div className="flex items-center justify-center py-3">
         <GiGlobe
           className="

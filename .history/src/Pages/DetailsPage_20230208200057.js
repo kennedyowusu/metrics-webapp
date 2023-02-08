@@ -15,18 +15,19 @@ const DetailsPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-start">
-      <div className="mx-auto max-w-sm p-4 rounded-lg ">
+      <div className="mx-auto max-w-sm p-10 rounded-lg ">
         <div
           className="flex items-start justify-start -mt-4 text-center
       "
         >
           <button
             type="button"
-            className="text-xl py-4 hover:text-gray-500 text-start text-teal font-bold
+            className="text-xl py-4 hover:text-gray-500 text-start text-white font-bold
           rounded-lg
         "
             onClick={() => navigate(-1)}
           >
+           
             <FiChevronLeft />
           </button>
         </div>
