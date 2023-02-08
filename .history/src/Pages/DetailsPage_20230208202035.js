@@ -15,7 +15,7 @@ const DetailsPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-start">
-      <div className="mx-auto max-w-sm p-4 rounded-lg ">
+      <div className="mx-auto max-w-sm p- rounded-lg ">
         <div
           className="flex items-start justify-start -mt-4 text-center
       "
