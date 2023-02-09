@@ -34,7 +34,7 @@ const DetailsPage = () => {
         "
             />
           </button>
-          <div className="flex items-center justify-center mt-7 ml-16 text-center text-teal-500">
+          <div className="flex items-center justify-center mt-6 ml-16 text-center bg-teal-500 text-white">
             <h2 className="text-md font-medium p-1 uppercase text-center">
               {country.name}
             </h2>
@@ -52,6 +52,11 @@ const DetailsPage = () => {
             className=" w-full h-52 mx-auto md:full md:h-screen lg:full lg:h-screen
         border-4 border-gray-200 object-cover "
           />
+          <div className="flex items-center justify-center mt-4 mb-2 text-center bg-teal-500 text-white">
+            <h2 className="text-md font-medium p-1 uppercase">
+              {country.name}
+            </h2>
+          </div>
           <div className="flex items-center justify-center mt-4 mb-2 text-center bg-teal-500 text-white">
             <p className="text-md font-medium p-1">
               Capital:

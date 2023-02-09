@@ -20,7 +20,7 @@ const DetailsPage = () => {
       bg-white shadow-md fixed top-0 left-0 right-0 z-10 -mt-4
         "
       >
-        <div className="py-3 flex items-center justify-start -mt-4 text-center">
+        <div className="py-3 flex items-center justify-between -mt-4 text-center">
           <button
             type="button"
             className="text-xl py-4 hover:text-gray-500 text-start text-teal font-bold
@@ -34,8 +34,8 @@ const DetailsPage = () => {
         "
             />
           </button>
-          <div className="flex items-center justify-center mt-7 ml-16 text-center text-teal-500">
-            <h2 className="text-md font-medium p-1 uppercase text-center">
+          <div className="flex items-center justify-center mt-4 text-center bg-teal-500 text-white">
+            <h2 className="text-md font-medium p-1 uppercase">
               {country.name}
             </h2>
           </div>
@@ -52,6 +52,11 @@ const DetailsPage = () => {
             className=" w-full h-52 mx-auto md:full md:h-screen lg:full lg:h-screen
         border-4 border-gray-200 object-cover "
           />
+          <div className="flex items-center justify-center mt-4 mb-2 text-center bg-teal-500 text-white">
+            <h2 className="text-md font-medium p-1 uppercase">
+              {country.name}
+            </h2>
+          </div>
           <div className="flex items-center justify-center mt-4 mb-2 text-center bg-teal-500 text-white">
             <p className="text-md font-medium p-1">
               Capital:
