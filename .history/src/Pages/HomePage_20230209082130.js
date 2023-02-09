@@ -25,13 +25,13 @@ const HomePage = () => {
   }
 
   return (
-    <section>
+    <main>
       <nav
         className="
       bg-white shadow-md fixed top-0 left-0 right-0 z-10 -mt-4
         "
       >
-        <div className="py-3 flex items-center justify-between mt-4 text-center">
+        <div className="py-3 flex items-center justify-between -mt-4 text-center">
           <GiGlobe
             className="
         text-4xl text-teal-500 ml-2 mr-4 animate-bounce animate-pulse animate-infinite
@@ -42,12 +42,34 @@ const HomePage = () => {
             placeholder="Search"
             value={searchTerm}
             onChange={handleSearch}
-            className="w-full md:w-64 lg:w-96 p-2 mr-4 rounded-lg border
+            className="w-full md:w-64 p-2 mr-4 rounded-lg border
         border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent
           "
           />
         </div>
       </nav>
+      {/* <nav
+        className="
+      bg-white shadow-md fixed top-0 left-0 right-0 z-10
+        "
+      >
+        <div className="flex items-center justify-center py-3">
+          <GiGlobe
+            className="
+        text-4xl text-teal-500 ml-2 mr-4 animate-bounce animate-pulse animate-infinite
+        "
+          />
+          <input
+            type="text"
+            placeholder="Search"
+            value={searchTerm}
+            onChange={handleSearch}
+            className="w-full md:w-64 p-2 mr-4 rounded-lg border
+        border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent
+          "
+          />
+        </div>
+      </nav> */}
       <div className="flex flex-col items-center justify-start p-4 pt-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
           {filteredCountries.map((country) => (
@@ -66,7 +88,7 @@ const HomePage = () => {
           ))}
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 

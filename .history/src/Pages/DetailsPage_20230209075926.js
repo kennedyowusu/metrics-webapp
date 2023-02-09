@@ -17,7 +17,7 @@ const DetailsPage = () => {
     <section>
       <nav
         className="
-      bg-white shadow-md fixed top-0 left-0 right-0 z-10 -mt-4
+      bg-white shadow-md fixed top-0 left-0 right-0 z-10
         "
       >
         <div className="py-3 flex items-center justify-start -mt-4 text-center">
@@ -30,14 +30,28 @@ const DetailsPage = () => {
           >
             <FiChevronLeft
               className="
-        text-[2.5rem] text-teal-500 ml-2 mr-4 pt-6
+        text-4xl text-teal-500 ml-2 mr-4
         "
             />
           </button>
         </div>
       </nav>
-      <div className="flex flex-col items-center justify-start pt-16">
+      <div className="flex flex-col items-center justify-start">
         <div className="mx-auto max-w-sm p-4 rounded-lg ">
+          {/* <div
+            className="flex items-start justify-start -mt-4 text-center
+      "
+          >
+            <button
+              type="button"
+              className="text-xl py-4 hover:text-gray-500 text-start text-teal font-bold
+          rounded-lg
+        "
+              onClick={() => navigate(-1)}
+            >
+              <FiChevronLeft />
+            </button>
+          </div> */}
 
           <img
             src={country.flag}

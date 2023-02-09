@@ -42,7 +42,7 @@ const HomePage = () => {
             placeholder="Search"
             value={searchTerm}
             onChange={handleSearch}
-            className="w-full md:w-64 lg:w-96 p-2 mr-4 rounded-lg border
+            className="w-full md:w-64 lg:w9 p-2 mr-4 rounded-lg border
         border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent
           "
           />

@@ -30,7 +30,7 @@ const DetailsPage = () => {
           >
             <FiChevronLeft
               className="
-        text-[2.5rem] text-teal-500 ml-2 mr-4 pt-6
+        text-[2.5rem] text-teal-500 ml-2 mr-4 pt-6 border-4 border-gray-200
         "
             />
           </button>
