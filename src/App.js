@@ -1,12 +1,18 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+import DetailsPage from './Pages/DetailsPage';
+import NotFound from './Pages/NotFound';
+
 function App() {
   return (
-    <div className="App">
+    <div
+      className=""
+    >
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
-        <Route path="about" element={<h1>About</h1>} />
-        <Route path="dashboard" element={<h1>Dashboard</h1>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/details/:alpha2Code" element={<DetailsPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
