@@ -36,15 +36,15 @@ const DetailsPage = () => {
           </button>
         </div>
       </nav>
-      <div
-        className=" items-center justify-start pt-16
+      <div className="flex flex-col items-center justify-start pt-16
       "
       >
         <div className="p-4 rounded-lg ">
+
           <img
             src={country.flag}
             alt={country.name}
-            className=" w-full h-52 mx-auto md:full md:h-screen lg:full lg:h-screen
+            className=" w-90 h-52 mx-auto
         border-4 border-gray-200 object-cover "
           />
           <div className="flex items-center justify-center mt-4 mb-2 text-center bg-teal-500 text-white">
@@ -68,8 +68,7 @@ const DetailsPage = () => {
           </div>
           <div className="flex items-center justify-center mt-4 mb-2 text-center bg-teal-500 text-white">
             <p className="text-md font-medium p-1">
-              Area:
-              {' '}
+              Area:{' '}
               {country.area}
               {' '}
               km²
